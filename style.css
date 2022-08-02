@@ -1,0 +1,344 @@
+/* This template is not my creation. The awesome folks over at HTML5UP created this beauty; I'm using it for the purposes of teaching someone else. */
+
+@charset "utf-8";
+
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script|Open+Sans:300,400italic,800italic,400,800);
+
+/* BASE STYLES */
+*,
+*:before,
+*:after
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: 'Open Sans', sans-serif;
+  background: #000;
+  font-weight: 300;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+.cc /* container */
+{
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+#header
+{
+  margin: 2rem 0;
+}
+
+#header > .cc
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+#logo
+{
+  display: flex;
+  align-items: center;
+}
+
+#logo .logo-over
+{
+  display: inline-block;
+  padding: 0.25em;
+  font-family: 'Oleo Script';
+  font-size: 3em;
+  border-radius: 0.25em;
+  background-color: #ADD8E6;
+  color: #696969;
+}
+
+#logo .logo-under
+{
+  margin-left: 1em;
+  font-size: xxx-large;
+  font-weight: 800;
+  color: #444;
+}
+
+/* NAV */
+#nav > .c /* utility container class */
+{
+  display: flex;
+}
+
+#nav li
+{
+  margin: 0 0.5rem;
+  font-weight: 800;
+}
+
+#nav a
+{
+  display: block;
+  padding: 0.6em;
+  border-radius: 10px;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+#nav a:hover
+{
+  background: #696969;
+}
+
+#nav li.active a
+{
+  background: #444;
+  color: #fff;
+}
+
+/* MAIN */
+#main
+{
+  line-height: 1.5;
+}
+
+/* BANNER */
+.banner
+{
+  line-height: 1.2;
+  margin: 2em 0;
+}
+
+.banner > .cc
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4em;
+  border-radius: 10px;
+  border-bottom: 3px solid #ddd;
+  background: #fff;
+}
+
+.banner .call
+{
+  width: 60%;
+}
+
+.banner h2
+{
+  margin-bottom: 0.3em;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #444;
+}
+
+.banner h3
+{
+  font-size: 3;
+  font-weight: 150;
+  color: #696969;
+}
+
+.banner .actions
+{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.banner .actions a
+{
+  display: block;
+  width: 100%;
+  margin: 0.2em 0;
+  padding: 0.5em;
+  font-weight: 800;
+  font-size: 2.25rem;
+  border-radius: 10px;
+}
+
+.banner .actions a:first-child
+{
+  color: #fff;
+  background: #0090c5;
+}
+
+.banner .actions a:last-child
+{
+  color: #696969;
+  background: #f1f1f1;
+}
+
+/* PANELS */
+.panels
+{
+  margin: 2rem 0;
+}
+
+.panels > .cc
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel
+{
+  width: 100%;
+  background: #fff;
+  border-bottom: 3px solid #ddd;
+  border-radius: 10px;
+  line-height: 1.625;
+}
+
+.panel-content
+{
+  padding: 1.5em;
+}
+
+.panel h4
+{
+  font-weight: 800;
+}
+
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+.fa-facebook {
+color:rgb(59,89,152);
+margin-left:0px;
+}
+.fa-twitter {
+color:#1DA1F2;
+}
+.fa-google-plus {
+color:#DB4437;
+}
+.fa-envelope-o {
+color:black;
+}
+.fa-whatsapp {
+color:#4FCE5D;
+}
+
+.share {
+box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
+border:none;
+  padding:10px;
+margin:auto;
+background:white;
+font-size:40px;
+display:flex;
+  justify-content:space-around;
+}
+
+body .footer {
+  z-index: 1;
+  --footer-background:#ED5565;
+  display: grid;
+  position: relative;
+  grid-area: footer;
+  min-height: 12rem;
+}
+body .footer .bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background: var(--footer-background);
+  filter: url("#blob");
+}
+body .footer .bubbles .bubble {
+  position: absolute;
+  left: var(--position, 50%);
+  background: var(--footer-background);
+  border-radius: 100%;
+  -webkit-animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+          animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+  transform: translate(-50%, 100%);
+}
+body .footer .content {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 4rem;
+  padding: 2rem;
+  background: var(--footer-background);
+}
+body .footer .content a, body .footer .content p {
+  color: #F5F7FA;
+  text-decoration: none;
+}
+body .footer .content b {
+  color: white;
+}
+body .footer .content p {
+  margin: 0;
+  font-size: 0.75rem;
+}
+body .footer .content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .footer .content > div > div {
+  margin: 0.25rem 0;
+}
+body .footer .content > div > div > * {
+  margin-right: 0.5rem;
+}
+body .footer .content > div .image {
+  align-self: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 0.25rem 0;
+  background-size: cover;
+  background-position: center;
+}
+
+@-webkit-keyframes bubble-size {
+  0%, 75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+
+@keyframes bubble-size {
+  0%, 75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+@-webkit-keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
+@keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
